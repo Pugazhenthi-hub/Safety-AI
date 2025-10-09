@@ -3,15 +3,13 @@ AI Based Community Safety System It’s a system that uses artificial intelligen
 
 
 # The AI can:
-        * Detect unusual or unsafe activities (fights, theft, accidents).
 
+        * Detect unusual or unsafe activities (fights, theft, accidents).
 
         * Recognize emergencies (fire, smoke, intrusion).
 
-
         * Analyze text/audio complaints from people (NLP).
 
-        
         * Send alerts to security/authorities in real-time.
 
 
