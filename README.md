@@ -36,7 +36,7 @@ AI Based Community Safety System It’s a system that uses artificial intelligen
 (6). Automatically alerts authorities.
 
 
-## Predictive Crime/Incident Analysis (ML on historical data)
+## 2.Predictive Crime/Incident Analysis (ML on historical data)
 
 (1). Analyze past incidents to predict risky areas/times.
 
