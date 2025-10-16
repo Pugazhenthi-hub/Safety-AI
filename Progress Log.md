@@ -35,3 +35,14 @@ The next step is to train and evaluate the CNN+LSTM model using the prepared fra
 *. Implement and train the CNN+LSTM model on the prepared dataset.
 *. Evaluate model performance and fine-tune accuracy.
 I have included the dataset files 
+
+
+## Date:16-10-2025
+
+1.Reviewed the dataset and checked its structure.
+
+2.Attempted to prepare sequences for CNN+LSTM model training, but encountered memory allocation issues due to the dataset size.
+
+3.Explored solutions for handling large datasets efficiently (like reducing batch size, using generators, or resizing input data).
+
+4.Planned the next steps: either optimize the preprocessing code or use a smaller subset of data to proceed with model training.
