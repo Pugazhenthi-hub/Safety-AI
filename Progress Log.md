@@ -46,3 +46,7 @@ I have included the dataset files
 3.Explored solutions for handling large datasets efficiently (like reducing batch size, using generators, or resizing input data).
 
 4.Planned the next steps: either optimize the preprocessing code or use a smaller subset of data to proceed with model training.
+
+## date:30-10-2025
+
+Today, we continued working on our AI project (CNN + LSTM model). We checked the dataset, prepared the data for training, and identified a memory issue during sequence preparation. We discussed possible solutions to handle large datasets more efficiently and planned to optimize the preprocessing in the next session.
