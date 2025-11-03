@@ -50,3 +50,19 @@ I have included the dataset files
 ## date:30-10-2025
 
 Today, we continued working on our AI project (CNN + LSTM model). We checked the dataset, prepared the data for training, and identified a memory issue during sequence preparation. We discussed possible solutions to handle large datasets more efficiently and planned to optimize the preprocessing in the next session.
+
+## Date: 03-11-2025
+
+Violence Detection using CNN + LSTM
+
+We have successfully completed the data collection and preprocessing stages of our project. We gathered video datasets covering various categories such as abuse, fire, explosion, anomaly activity, and normal scenes. These videos were carefully processed by extracting individual frames using OpenCV.
+
+The extracted frames have been organized class-wise inside a structured folder system (frames_by_class/), which allows our model to easily differentiate between different types of activities. This step ensures that both violent and non-violent scenarios are well-represented for training.
+
+Currently, we are in the model training phase. We are training a hybrid CNN + LSTM model:
+
+The CNN (Convolutional Neural Network) part extracts spatial features from each video frame (like shapes, movements, and visual patterns).
+
+The LSTM (Long Short-Term Memory) part learns the temporal sequence — how frames change over time — to understand the flow of actions.
+
+The combined CNN+LSTM architecture is designed to detect and classify violent versus non-violent activities effectively. We are monitoring the model’s accuracy and performance during training and will soon proceed to the evaluation stage to test its effectiveness on unseen data.
