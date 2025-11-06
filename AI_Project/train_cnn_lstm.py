@@ -126,3 +126,6 @@ with torch.no_grad():
         correct += (predicted == y_batch).sum().item()
 
 print(f"Test Accuracy: {100*correct/total:.2f}%")
+torch.save(model.state_dict(), "cnn_lstm_model.pth")
+print("✅ Model saved successfully as cnn_lstm_model.pth")
+

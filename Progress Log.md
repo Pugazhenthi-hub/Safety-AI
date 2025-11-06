@@ -66,3 +66,35 @@ The CNN (Convolutional Neural Network) part extracts spatial features from each 
 The LSTM (Long Short-Term Memory) part learns the temporal sequence — how frames change over time — to understand the flow of actions.
 
 The combined CNN+LSTM architecture is designed to detect and classify violent versus non-violent activities effectively. We are monitoring the model’s accuracy and performance during training and will soon proceed to the evaluation stage to test its effectiveness on unseen data.
+
+## Date: 06-11-2025
+
+🧠 AI Project Status Update — CNN + LSTM Model
+
+Current Progress:
+
+The CNN + LSTM model for video-based activity recognition has been successfully trained using the prepared dataset.
+
+Training completed locally with high performance — Test Accuracy: 99.8 %.
+
+The trained model has been saved as cnn_lstm_model.pth (≈ 205 MB).
+
+We have also prepared a testing script (test_model.py) to evaluate the model on new or unseen videos.
+
+The project structure is organized with:
+
+Dataset split into class folders (frames_by_class)
+
+Preprocessing scripts (extract_frames.py, organize_frames.py, prepare_sequences.py)
+
+Training script (train_cnn_lstm.py)
+
+Testing script (test_model.py)
+
+Next Steps:
+
+Test the model on new video samples to validate real-world accuracy.
+
+Optionally integrate real-time webcam/video stream prediction.
+
+Prepare final documentation and results report.
