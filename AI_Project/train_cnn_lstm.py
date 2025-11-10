@@ -68,22 +68,29 @@ class CNN_LSTM(nn.Module):
     def __init__(self, num_classes=5):
         super(CNN_LSTM, self).__init__()
         self.cnn = nn.Sequential(
-            nn.Conv2d(3,16,3,padding=1),
+            nn.Conv2d(3, 16, 3, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(2),
-            nn.Conv2d(16,32,3,padding=1),
+            nn.Conv2d(16, 32, 3, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(2)
         )
-        self.lstm = nn.LSTM(input_size=32*56*56, hidden_size=128, batch_first=True)
+
+        # Temporarily create dummy input to find CNN output size
+        dummy_input = torch.zeros(1, 3, 224, 224)
+        cnn_out = self.cnn(dummy_input)
+        cnn_flat_size = cnn_out.view(1, -1).size(1)
+
+        # Use that size for LSTM
+        self.lstm = nn.LSTM(input_size=cnn_flat_size, hidden_size=128, batch_first=True)
         self.fc = nn.Linear(128, num_classes)
-    
+
     def forward(self, x):
         batch_size, seq_len, C, H, W = x.size()
         cnn_out = []
         for t in range(seq_len):
             out = self.cnn(x[:, t])
-            out = out.view(batch_size, -1)
+            out = out.reshape(batch_size, -1)
             cnn_out.append(out)
         cnn_features = torch.stack(cnn_out, dim=1)
         lstm_out, _ = self.lstm(cnn_features)

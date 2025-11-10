@@ -98,3 +98,7 @@ Test the model on new video samples to validate real-world accuracy.
 Optionally integrate real-time webcam/video stream prediction.
 
 Prepare final documentation and results report.
+
+## Date:10.11.2025
+
+“We have successfully trained our CNN + LSTM model for the AI-Based Community Safety System. The model is giving 100% accuracy in detecting abnormal and normal activities from video data. We’ve also implemented the testing part to predict the class of input videos. Currently, we’re preparing the final report and planning to integrate an alert system as the next step.”
